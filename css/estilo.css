@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #0767c0;
+    background-image: linear-gradient(to bottom, #0767c0, #0083d3, #009edf, #00b8e7, #12d1eb);
     border: 1px solid #000;
     padding: 20px;
     position: sticky;
@@ -73,12 +74,17 @@
     height: 300px;
     width: auto;
     border-radius: 10%;
+    transition: height 2.8s;
+}
+.imagenInicio:hover{
+    height: 350px;
 }
 .footer{
     grid-area: footer;
     display: flex;
     justify-content: center;
     background-color: #0767c0;
+    background-image: linear-gradient(to bottom, #0767c0, #0083d3, #009edf, #00b8e7, #12d1eb);
     border: 1px solid #000;
     padding: 20px;
     font-size: 20px;
