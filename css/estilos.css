@@ -49,7 +49,8 @@ header .listaNav li a:hover {
   font-family: oswald;
   font-size: 35px;
   padding: 10px;
-  color: purple;
+  color: #fff;
+  text-shadow: 1px 1px 5px #333;
 }
 
 .main p {
@@ -65,6 +66,10 @@ header .listaNav li a:hover {
   font-size: 20px;
 }
 
+.contacto {
+  display: flex;
+}
+
 .imagenInicio {
   height: 250px;
   width: auto;
@@ -74,6 +79,14 @@ header .listaNav li a:hover {
 }
 .imagenInicio:hover {
   height: 350px;
+}
+
+.button {
+  background-color: turquoise;
+  color: #333;
+  padding: 5px;
+  margin: 10px;
+  font-family: oswald;
 }
 
 .footer {
@@ -86,6 +99,8 @@ header .listaNav li a:hover {
   padding: 20px;
   font-size: 20px;
   font-family: oswald;
+  color: #fff;
+  text-shadow: 1px 1px 5px #333;
 }
 
 .listaFooter {

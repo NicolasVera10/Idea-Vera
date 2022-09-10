@@ -55,9 +55,11 @@ $texto: principal;
     }
 
     @if $texto == secundario {
+        grid-area: main;
         height: 200vh;
         width: 50%;
         background-color: yellow;
+        overflow: hidden;
     }
 }
 .main h2{
@@ -66,8 +68,10 @@ $texto: principal;
     font-family: $pFont;
     font-size: 35px;
     padding: 10px;
-    color: $colTitulo;
+    color: #fff;
+    text-shadow: 1px 1px 5px #333;
 }
+
 .main p{
     display: flex;
     justify-content: flex-start;
@@ -78,6 +82,9 @@ $texto: principal;
 .main form{
     padding: 10px;
     font-size: 20px;
+}
+.contacto{
+    display: flex;
 }
 .imagenInicio{
     height: 250px;
@@ -91,7 +98,13 @@ $texto: principal;
     }
 }
 
-
+.button{
+    background-color: turquoise;
+    color: #333;
+    padding: 5px;
+    margin: 10px;
+    font-family: oswald;
+}
 .footer{
     grid-area: footer;
     display: flex;
@@ -102,6 +115,8 @@ $texto: principal;
     padding: 20px;
     font-size: 20px;
     font-family: oswald;
+    color: #fff;
+    text-shadow: 1px 1px 5px #333;
 }
 
 .listaFooter{
