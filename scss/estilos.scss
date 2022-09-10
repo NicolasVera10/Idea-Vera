@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+<<<<<<< HEAD:css/estilo.css
+.header{
+=======
+$colTitulo: purple;
+$pFont: oswald; 
+
+header{
+>>>>>>> scss:scss/estilos.scss
+    display: flex;
+    justify-content: space-between;
+    background-color: #0767c0;
+    background-image: linear-gradient(to bottom, #0767c0, #0083d3, #009edf, #00b8e7, #12d1eb);
+    border: 1px solid #000;
+    padding: 20px;
+<<<<<<< HEAD:css/estilo.css
+    margin: 0;
+
+}
+.logo{
+    width: 50%;
+=======
+    position: sticky;
+    top: 0px;
+
+    .logo{
+        width: 50%;
+    }
+
+    .listaNav{
+        display: flex;
+    }
+    
+    .listaNav li{
+        list-style: none;
+    }
+
+    .listaNav li a{
+        text-decoration: none;
+        padding: 10px;
+        color: #fff;
+        font-family: arial;
+        font-size: 25px;
+        text-shadow: 1px 1px 5px #333;
+        
+        &:hover{
+            color: #333
+        }
+    }
+>>>>>>> scss:scss/estilos.scss
+}
+
+$texto: principal;
+
+<<<<<<< HEAD:css/estilo.css
+}
+.listaNav li a:hover{
+    color: #333;
+}
+.color2{
+    background-color: #A6ABBD;
+=======
+.main{
+    @if $texto == principal {
+    grid-area: main;
+    height: 140vh;
+    width: 100%;
+    background-color: #a6aabd;
+    overflow: hidden;
+    }
+
+    @if $texto == secundario {
+        grid-area: main;
+        height: 200vh;
+        width: 50%;
+        background-color: yellow;
+        overflow: hidden;
+    }
+}
+.main h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: $pFont;
+    font-size: 35px;
+>>>>>>> scss:scss/estilos.scss
+    padding: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #333;
+}
+<<<<<<< HEAD:css/estilo.css
+=======
+
+.main p{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+}
+.main form{
+    padding: 10px;
+    font-size: 20px;
+}
+.contacto{
+    display: flex;
+}
+.imagenInicio{
+    height: 250px;
+    width: auto;
+    border-radius: 10%;
+    transition: height 2.8s;
+    justify-content: center;
+
+    &:hover{
+        height: 350px;
+    }
+}
+
+.button{
+    background-color: turquoise;
+    color: #333;
+    padding: 5px;
+    margin: 10px;
+    font-family: oswald;
+}
+>>>>>>> scss:scss/estilos.scss
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: #0767c0;
+    background-image: linear-gradient(to bottom, #0767c0, #0083d3, #009edf, #00b8e7, #12d1eb);
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    font-family: oswald;
+    color: #fff;
+    text-shadow: 1px 1px 5px #333;
+}
+
+.listaFooter{
+    display: 	flex;
+}
+.listaFooter li{
+    list-style: none;
+    padding: 0 20px;
+}
+.listaFooter li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.listaFooter li a:hover{
+    color: #333;
+}
