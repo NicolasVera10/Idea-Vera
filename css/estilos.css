@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 header {
   display: flex;
@@ -12,36 +11,33 @@ header {
   border: 1px solid #000;
   padding: 20px;
   position: sticky;
-  top: 0px;
-}
-header .logo {
-  width: 50%;
-}
-header .listaNav {
-  display: flex;
-}
-header .listaNav li {
-  list-style: none;
-}
-header .listaNav li a {
-  text-decoration: none;
-  padding: 10px;
-  color: #fff;
-  font-family: arial;
-  font-size: 25px;
-  text-shadow: 1px 1px 5px #333;
-}
-header .listaNav li a:hover {
-  color: #333;
-}
+  top: 0px; }
+  header .logo {
+    width: 50%; }
+  header .listaNav {
+    display: flex; }
+  header .listaNav li {
+    list-style: none; }
+  header .listaNav li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-family: arial;
+    font-size: 25px;
+    text-shadow: 1px 1px 5px #333; }
+    header .listaNav li a:hover {
+      color: #333; }
 
 .main {
   grid-area: main;
-  height: 140vh;
+  height: auto;
   width: 100%;
   background-color: #a6aabd;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
+.imagenInicio {
+  width: 100%;
+  height: auto; }
 
 .main h2 {
   text-align: center;
@@ -50,44 +46,38 @@ header .listaNav li a:hover {
   font-size: 35px;
   padding: 10px;
   color: #fff;
-  text-shadow: 1px 1px 5px #333;
-}
+  text-shadow: 1px 1px 5px #000; }
 
 .main p {
   display: flex;
   justify-content: flex-start;
   font-size: 25px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 10px;
-}
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px; }
 
 .main form {
   padding: 10px;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
-.contacto {
-  display: flex;
-}
+.carousel {
+  position: relative; }
 
-.imagenInicio {
-  height: 250px;
-  width: auto;
-  border-radius: 10%;
-  transition: height 2.8s;
-  justify-content: center;
-}
-.imagenInicio:hover {
-  height: 350px;
-}
+.d-block {
+  width: 50%;
+  margin-bottom: 40px;
+  margin-left: 25%; }
+
+.mapa {
+  width: 600px;
+  height: 450px;
+  border-radius: 10%; }
 
 .button {
-  background-color: turquoise;
-  color: #333;
-  padding: 5px;
-  margin: 10px;
-  font-family: oswald;
-}
+  color: whitesmoke;
+  background-color: #0767c0;
+  border-radius: 5px; }
+  .button:hover {
+    color: #333; }
 
 .footer {
   grid-area: footer;
@@ -98,37 +88,29 @@ header .listaNav li a:hover {
   border: 1px solid #000;
   padding: 20px;
   font-size: 20px;
-  font-family: oswald;
-  color: #fff;
-  text-shadow: 1px 1px 5px #333;
-}
+  font-family: oswald; }
 
 .listaFooter {
-  display: flex;
-}
+  display: flex; }
 
 .listaFooter li {
   list-style: none;
-  padding: 0 20px;
-}
+  padding: 0 20px; }
 
 .listaFooter li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .listaFooter li a:hover {
-  color: #333;
-}
+  color: #333; }
 
 @media only screen and (max-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-  }
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   .header {
     grid-area: header;
     display: flex;
@@ -138,11 +120,9 @@ header .listaNav li a:hover {
     border: 1px solid #000;
     padding: 20px;
     position: sticky;
-    top: 0px;
-  }
+    top: 0px; }
   .logo {
-    width: 80%;
-  }
+    width: 80%; }
   .footer {
     grid-area: footer;
     display: flex;
@@ -152,8 +132,4 @@ header .listaNav li a:hover {
     border: 1px solid #000;
     padding: 20px;
     font-size: 20px;
-    font-family: oswald;
-  }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+    font-family: oswald; } }
