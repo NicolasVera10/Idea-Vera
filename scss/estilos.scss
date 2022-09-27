@@ -33,7 +33,7 @@ header {
         text-decoration: none;
         padding: 10px;
         color: #fff;
-        font-family: arial;
+        font-family: oswald;
         font-size: 20px;
         text-shadow: 1px 1px 5px #333;
 
@@ -67,6 +67,12 @@ $texto: principal;
     border-radius: 5%;
 }
 
+.imagenNosotros{
+    width: 100%;
+    border-radius: 6%;
+    padding: 20px;
+}
+
 .main h2 {
     text-align: center;
     text-decoration: underline;
@@ -81,13 +87,20 @@ $texto: principal;
     display: flex;
     justify-content: flex-start;
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: oswald;
     padding: 10px;
 }
 
 .main form {
     padding: 10px;
     font-size: 20px;
+    font-family: oswald;
+
+}
+
+.main button{
+    font-size: 20px;
+    font-family: oswald;
 }
 
 .btn{
